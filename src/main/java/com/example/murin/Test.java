@@ -5,6 +5,7 @@ public class Test {
         System.out.println("we are the champions");
     }
 }
+
 class Rak {
 
- }
+}
