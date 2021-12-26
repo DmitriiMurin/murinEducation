@@ -6,10 +6,12 @@ import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
-        List<Integer> myArrayList = (List<Integer>) new MyArrayList<Object>(10);
-        for(int i = 0; i<10; i++){
-            myArrayList.add(i);
-            System.out.println(myArrayList);
-        }
+        MyArrayList<Integer> myArrayList = new MyArrayList<>();
+
+        myArrayList.add(1);
+        myArrayList.add(3);
+        myArrayList.add(5);
+        myArrayList.add(10);
+        System.out.println(myArrayList.get(3));
     }
 }
