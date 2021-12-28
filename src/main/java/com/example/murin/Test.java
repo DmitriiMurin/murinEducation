@@ -2,6 +2,7 @@ package com.example.murin;
 
 import com.example.murin.collections.list.MyArrayList;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Test {
@@ -13,5 +14,6 @@ public class Test {
         myArrayList.add(5);
         myArrayList.add(10);
         System.out.println(myArrayList.get(3));
+        List<Integer> test = new ArrayList<>(15);
     }
 }

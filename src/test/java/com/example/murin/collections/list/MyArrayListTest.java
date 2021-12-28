@@ -22,8 +22,8 @@ public class MyArrayListTest {
             correctArrayList.add(i);
         });
         //check
-        Assertions.assertEquals(correctArrayList.size() == myArrayList.size());
-        Assertions.assertEquals(limit == myArrayList.size());
+        Assertions.assertEquals(correctArrayList.size(), myArrayList.size());
+        Assertions.assertEquals(limit, myArrayList.size());
         for(int i = 0; i < limit; i++) {
             Assertions.assertEquals(correctArrayList.get(i), myArrayList.get(i));
         }
@@ -45,8 +45,8 @@ public class MyArrayListTest {
         correctArrayList.remove(50);
         myArrayList.remove(50);
         //check
-        Assertions.assertEquals(correctArrayList.size() == myArrayList.size());
-        Assertions.assertEquals(limit == myArrayList.size());
+        Assertions.assertEquals(correctArrayList.size(), myArrayList.size());
+        Assertions.assertEquals(limit -1, myArrayList.size());
         for(int i = 0; i < limit; i++) {
             Assertions.assertEquals(correctArrayList.get(i), myArrayList.get(i));
         }
